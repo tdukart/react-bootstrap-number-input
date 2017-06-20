@@ -6,7 +6,9 @@ deploy:
   - provider: releases
     api_key:
       secure: iV6/N+Uf/OvGn3xTumJli1BGQEEuofI/Rwx86sR1iOJGs2hGhQeZU+DmVyq2kUmYDMLt5Gzllqg4SrA9zs2bWzCTspnZ+XMBn2+6wbX0G/kxOWwsg8FdxTcGBDjQNPV6oExsZ3k5QfqscOS5gb3zpM2dpq+k/0rYN7A1m1lVejpXfpx/u/8v5PkjhUYjzk3Er0VM68KlxpgLVaOHPEs2vr5523QjGiibW2w32dTFGQz8ukHFSYTxeGMWVsX7Owyds6uBQd8Emvp+8fyvgLOJvtzxtxxD31knce9csXVQXx/7D/Hc+sS+/yuuUEJYptZ8GolbNodBw2/nHaDiVO1CpeMnbL+H1OTcuBtP2PtAxWbslYM1aUQ+5IZDPZPBVJzJ7k+yCH+2enqKE5vaRDjq9Kue7WZd6lzMhoW8ZTPtzcapdjt39viEwcg6/AkNLE/D78o/P58XbmIcerfgA9J0LaOW/M4hNqbOPdvud3YktWvkc6oZf8NDXwi+9XsLso1Q2Ivk1FR2p2NAFDBF0PcdAsvDNQAVhJfZM2v6V4Bg2lB/x85okC4CXutQ1+fbs0G6hkdlOLP8srpUrKnIVIx8jS9rJdwgdsOB/qZiICCuHFS5ByfyI3tILPjk8XZOnHukwd9fty7DrqyWAu4XDbnigAPogeYV7TXue4/K6WsLJYE=
-    file: dist/index.js
+    file: dist/*
+    file_glob: true
+    skip_cleanup: true
     on:
       repo: tdukart/react-bootstrap-number-input
       tags: true
@@ -14,6 +16,7 @@ deploy:
     email: tdukart@aloftinteractive.com
     api_key:
       secure: d4IZcdeLtzx8bVurJZyyActLvdHusQsy1CuQnwCt63Yf1Sh6zX/etDgr0WOujwnNGQeG8+8iSKZlVrE9kxUb1SXBZSTGWwy/cxhe+k6RmqBtfMvCvpEp0i3XnlefP5fwJA8mi3cXaKmB/b8SeKYl2CwNYGftfynmv5m3PIyjDPNAuE6TcB5GeGyiKj5jqozjd2TMRhFhTuD74NqgeqZs0vELMgW13G5txzL1Ta9/x2X2Fk48QxofNXkS0zDBDnoU7JPhRFpFWm1geI2Y+uPIdGJUaUC2GHFr0e8ANowYQv6e6F7Y7RHuJ/WFmPjK46EDDb+LRxrZzMEOQyWPctX5+qSGq97X7nnanhJPZjohIYsNCdP8xf5gzTv1PYIKyVBoyBw3WaAkitqmdKn1ZLMXe3zC5pm8OGvqiT3xRz8yv5U1rfZ2T0G0qqBB5j8mbFtd7A9zw9QnbYA38gbM644Ofa46VYn7Qani6RPDwFRtBhz3jW3UIdUi02wBp//14tvH6MTxnoJRt6/6h2t+oPFhHpYapEJNxYjeJpUHq9dhYL+Ts8NNYLwb79mXEGZ+0nC+TDhws8QxKBgoYvuPSMs9dplXV4fgqJpilOx6VdjWXgsPddhxwde5Lhhs8rjxYs5b5u1CKdtPSHugILBkbK0BtLlU5zulpz9IOj/1UShmYfk=
+    skip_cleanup: true
     on:
-      tags: true
       repo: tdukart/react-bootstrap-number-input
+      tags: true
